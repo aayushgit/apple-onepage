@@ -1,0 +1,260 @@
+body{
+	font-family:'Helvetica';
+}
+
+.vertical20{
+	margin-top: 20px;
+	margin-bottom:20px; 
+}
+
+.vertical50{
+	margin-top: 50px;
+	margin-bottom:50px; 
+}
+
+/*Navigation ko CSS*/
+
+.nav ul{
+	    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    list-style-type: none;
+    background-color: inherit;
+    position: absolute;
+    width: 100%;
+    margin-left: -4px;
+}
+
+.nav li{
+	float: left;
+        margin: -12px 55px 0px 55px;
+    font-size: 16px;
+    display: inline-block;
+}
+.nav li a{
+	display: block;
+	color: #fff;
+	min-width: 140px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.nav li a:hover{
+	opacity: 0.8;
+
+}
+
+.nav{
+	
+	background-color: #292929;
+    margin: -8px -15px 0px -15px;
+    padding: 15px 0px 10px 10px;
+    font-weight: 200;
+    width: 100%;
+}
+
+
+/*HEADER PHOTU KO CSS*/
+
+.header img{
+	width: 80%;
+    padding: 0px 120px 0px 120px;
+}
+
+.header h1{
+	text-align: center;
+	margin: 50px;
+    margin-bottom: 0px;
+	
+}
+
+.header p{
+	text-align:center;
+	margin-top: 10px; 
+	
+}
+
+
+/*ABOUT KO CSS*/
+
+#about h1{
+	text-align: center;
+
+}
+.product{
+	background: #292929;
+	color: #fff;
+	    padding-bottom: 40px;
+
+}
+.wrapperpro{
+	padding: 30px 0px 0px 80px;
+	width: 50%;
+}
+
+.wrapperpro h2{
+	position: absolute;
+    top: 830px;
+    left: 220px;
+}
+
+.wrapperpro p{
+	position: absolute;
+    top: 870px;
+    left: 220px;
+    width: 40%;
+}
+.wrapperpro img{
+	width: 100px;
+}
+
+.wrapperpro2{
+	padding: 30px 0px 0px 80px;
+	width: 50%;
+}
+
+.wrapperpro2 h2{
+	position: absolute;
+    top: 980px;
+    left: 220px;
+}
+
+.wrapperpro2 p{
+	position: absolute;
+    top: 1020px;
+    left: 220px;
+    width: 40%;
+}
+.wrapperpro2 img{
+	width: 100px;
+}
+
+.wrapperpro3{
+	padding: 30px 0px 0px 80px;
+	width: 50%;
+}
+
+.wrapperpro3 h2{
+	position: absolute;
+    top: 1130px;
+    left: 220px;
+}
+
+.wrapperpro3 p{
+	position: absolute;
+    top: 1170px;
+    left: 220px;
+    width: 40%;
+}
+.wrapperpro3 img{
+	width: 100px;
+}
+
+/*PRICING KO CSS*/
+
+#pricing h1{
+	text-align: center;
+
+}
+
+#pricing table{
+	width: 100%;
+	
+}
+
+th{
+	border-bottom: 1px solid;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+
+#pricing table td{
+	font-weight: 100;
+	text-align: center;
+}
+
+#pricing table ul li{
+	text-align: left;
+}
+
+.buynow{
+	 background-color: #3690d0;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    width: 110px;
+    text-align: center;
+}
+
+#join h1{
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+#join p{
+	text-align: center;
+}
+
+.joinform{
+	background-color: #292929;
+	width: 100%;
+	text-align: center;
+	padding: 40px 0px 20px 0px;
+}
+
+.joinform input{
+	    height: 35px;
+    margin: 15px;
+    border-radius: 12px;
+    border: none;
+    width: 30%;
+    text-align: center;
+    font-size: 14px;
+	
+}
+
+.joinbtn{
+	margin: 30px !important;
+    background-color: #616161;
+    color: white;
+    font-size: 20px !important ;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    width: 120px !important;
+    text-align: center;
+    height: 35px;
+
+}
+
+.footer p{
+	margin: 10px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 100;
+
+}
+
+
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 760px) {
+
+ul{
+	position: static;
+	display: none;
+}
+
+li{
+	margin-bottom: 1px;
+}
+
+ul li a{
+	width: 100%
+}
+}
