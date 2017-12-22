@@ -1,0 +1,56 @@
+body{
+	background: url('../images/appleblack.jpg');
+	background-size:cover;
+	background-repeat: no-repeat; 
+	font-family:'Helvetica';
+}
+
+.login{
+	float: right;
+	background: #ffffff63;
+	padding: 60px 30px 150px 30px;
+	margin-top: -10px;
+}
+
+.login img{
+	margin-left: 25px;
+
+}
+
+.login h2{
+margin-left: 25px;
+margin-bottom: 0px;
+}
+
+.login h4{
+	margin-left: 25px;
+    margin-top: 0px;
+    color: #ccc;
+    font-weight: 100;
+}
+
+.loginform input{
+	    height: 35px;
+    margin: 15px;
+    border-radius: 12px;
+    border: none;
+    width: 280px;
+    text-align: center;
+    font-size: 14px;
+    display: block;
+	
+}
+
+.joinbtn{
+	margin: 30px !important;
+    background-color: #3690d0;
+    color: white;
+    font-size: 20px !important ;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    width: 120px !important;
+    text-align: center;
+    height: 35px;
+
+}

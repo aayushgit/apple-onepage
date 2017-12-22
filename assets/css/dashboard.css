@@ -1,0 +1,115 @@
+
+.search{
+	background: #292929;
+	margin: -10px;
+    padding: 10px;
+
+}
+
+.search img{
+	width: 25px;
+}
+
+.search input{
+	height: 35px;
+    margin: 10px;
+    border-radius: 12px;
+    border: none;
+    width: 25%;
+    text-align: left;
+    font-size: 14px;
+}
+
+.main{
+	margin-left: 30%;
+}
+
+.main form input{
+	border-radius: 20px;
+    height: 40px;
+    border: none;
+    background-color: #f7f7f7;
+    color: #565656;
+    margin: 20px 20px 0px 20px;
+    padding-left: 20px;
+    outline: none;
+    display: block;
+    width: 50%;
+    font-size: 14px;
+}
+
+input:focus{
+	border: none;
+}
+
+.submit{
+	    margin: 20px 0px 0px 25px;
+    background-color: #3690d0;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    width: 110px;
+    text-align: center;
+}
+
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #000;
+    
+    color: ##565656;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #000;
+   
+   opacity:  1;
+   color: ##565656;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #000;
+   
+   opacity:  1;
+   color: ##565656;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #000;
+   
+   color: ##565656;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #000;
+   
+   color: ##565656;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:    #000;
+   
+   color: ##565656;
+}
+
+
+
+
+.longinput{
+  display: inline;
+  width: 70%;
+}
+
+.joinbtn{
+	margin: 30px !important;
+    background-color: #616161;
+    color: white;
+    font-size: 20px !important ;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    width: 120px !important;
+    text-align: center;
+    height: 35px;
+
+
+}
+
