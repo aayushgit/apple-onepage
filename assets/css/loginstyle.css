@@ -8,8 +8,9 @@ body{
 .login{
 	float: right;
 	background: #ffffff63;
-	padding: 60px 30px 150px 30px;
+	padding: 60px 30px 200px 30px;
 	margin-top: -10px;
+    margin-right: -5px;
 }
 
 .login img{
@@ -35,14 +36,23 @@ margin-bottom: 0px;
     border-radius: 12px;
     border: none;
     width: 280px;
-    text-align: center;
+    text-align: left;
     font-size: 14px;
     display: block;
+    padding-left: 10px;
 	
 }
 
+
+
+
+
+.loginform input:focus{
+    outline: none;
+}
+
 .joinbtn{
-	margin: 30px !important;
+	margin: 10px 30px 30px 20px  !important;
     background-color: #3690d0;
     color: white;
     font-size: 20px !important ;
@@ -54,3 +64,4 @@ margin-bottom: 0px;
     height: 35px;
 
 }
+

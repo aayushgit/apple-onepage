@@ -6,19 +6,32 @@
 </head>
 <body>
 	<div class="search">
-		<div class="searchimage">
 		<img src="assets/images/logo.png" alt="Apple Logo">
 		<form action="" style="display: inline">
 			<input type="search" placeholder="Search">
 		</form>
-		</div>
+		
 	</div>
 
+	<h1>Insert Data Into The Database</h1>
+	<h3>All the details of the product please!</h3>
+
 	<div class="main">
-		<form name="add" action="addproduct.php" method="GET">
+		<form name="add" action="addproduct.php" method="POST">
 			<input type="text" placeholder="Product Id" name="productID">
 			<input type="text" placeholder="Name of the Product" name="productName">
-			<input type="text" placeholder="Image of Product" name="productImage">
+			<!-- <select type="text" placeholder="Storage Size" name="productStorage">
+				<option value="16GB">16 GB</option>
+				<option value="16GB">16 GB</option>
+				<option value="16GB">16 GB</option>
+				<option value="16GB">16 GB</option>
+
+
+			</select> -->
+			<input type="text" placeholder="Specification 1" name="spec1">
+			<input type="text" placeholder="Specification 2" name="spec2">
+			<input type="text" placeholder="Specification 3" name="spec3">
+			<input type="file" placeholder="Image of Product" name="productImage">
 			<input type="text" placeholder="Price of Product" name="productPrice">
 			<button type="submit" class="submit" value="Add Now">Add Now</button>
 
