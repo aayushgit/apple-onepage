@@ -1,7 +1,9 @@
-<!DOCTYPE html>
+<?php
+session_start();
+?>
 <html>
 <head>
-	<title>World Of Mac. The Ultimate Portal for all Apple news.</title>
+	<title>World Of Mac. The Ultimate Portal for all Apple Products.</title>
 	<link rel="stylesheet" href="assets/css/style.css">
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 	<meta charset="utf-8">
@@ -10,12 +12,14 @@
 <body>
 <div class="nav">
 	<ul>
+		<li><a href="index.php"><img src="./assets/images/logo.png" alt="Site Logo" style="width: 30px;
+    margin: 9px 40px 0px 40px;"></a></li>
 		<li><a href="#">Home</a></li>
 		<li><a href="#about">About</a></li>
-		<li><a href="#"><img src="./assets/images/logo.png" alt="Site Logo" style="width: 16px;
-    margin: 0px 40px 0px 40px;"></a></li>
 		<li><a href="#pricing">Pricing</a></li>
 		<li><a href="#join">Join Us</a></li>
+		<li><a href="register.php"><img src="./assets/images/user.png" style="width: 24px;padding: 12px;"></a></li>
+
 	</ul>
 </div>
 
@@ -62,74 +66,9 @@
 
 <div class="vertical50"></div>
 
-<div id="pricing">
-	<h1>Pricing of Our Products</h1>
-
-	<table>
-		<tr>
-			<th>S.N.</th>
-			<th>Product Name</th>
-			<th>Product Image</th>
-			<th>Product Specs</th>
-			<th>Price</th>
-			<th></th>
-		</tr>
-		<tr>
-			<td>01</td>
-			<td>iPhone X</td>
-			<td><img src="./assets/images/iphonex.png" alt="" width="100px"></td>
-			<td>
-				<ul>
-					<li>This is a Spec</li>
-					<li>This is also an Spec </li>
-				</ul>
-			</td>
-			<td>$1100</td>
-			<td><a href="#modal"><button class="buynow">Buy Now</button></a></td>
-		</tr>
-
-		<tr>
-			<td>02</td>
-			<td>Macbook Pro Retina</td>
-			<td><img src="./assets/images/mac.png" alt="" width="100px"></td>
-			<td>
-				<ul>
-					<li>This is a Spec</li>
-					<li>This is also an Spec </li>
-				</ul>
-			</td>
-			<td>$1990</td>
-			<td><a href="#modal"><button class="buynow">Buy Now</button></a></td>
-		</tr>
-
-		<tr>
-			<td>03</td>
-			<td>iPad Pro</td>
-			<td><img src="./assets/images/ipad.png" alt="" width="100px"></td>
-			<td>
-				<ul>
-					<li>This is a Spec</li>
-					<li>This is also an Spec </li>
-				</ul>
-			</td>
-			<td>$800</td>
-			<td><a href="#modal"><button class="buynow">Buy Now</button></a></td>
-		</tr>
-
-		<tr>
-			<td>04</td>
-			<td>iMac</td>
-			<td><img src="./assets/images/imac.png" alt="" width="100px"></td>
-			<td>
-				<ul>
-					<li>This is a Spec</li>
-					<li>This is also an Spec </li>
-				</ul>
-			</td>
-			<td>$2900</td>
-			<td><a href="#modal"><button class="buynow">Buy Now</button></a></td>
-		</tr>
-	</table>
+<?php
+include('productlist.php');
+	?>
 </div>
 
 <div class="vertical50"></div>
@@ -141,7 +80,7 @@
 		<form action="./action.php" name="joinus" onSubmit="return validateForm();" method="post">
 			<input type="text" placeholder="Enter Your Name" name="name"> <br>
 			<input type="text" placeholder="Enter Your Email Address" name="email"> <br>
-			<input type="submit" class="joinbtn" ></button>
+			<button type="submit" class="joinbtn" >Join Now</button>
 		</form>
 	</div>
 	
@@ -152,3 +91,5 @@
 
 </body>
 </html>
+
+?>
