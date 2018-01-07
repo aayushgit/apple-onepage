@@ -12,8 +12,8 @@ session_start();
 <body>
 <div class="nav">
 	<ul>
-		<li><a href="index.php"><img src="./assets/images/logo.png" alt="Site Logo" style="width: 30px;
-    margin: 9px 40px 0px 40px;"></a></li>
+		<li><a href="home.php"><img src="./assets/images/logo.png" alt="Site Logo" style="width: 25px;
+margin: 11px 40px 0px 40px;"></a></li>
 		<li><a href="#">Home</a></li>
 		<li><a href="#about">About</a></li>
 		<li><a href="#pricing">Pricing</a></li>
@@ -91,5 +91,3 @@ include('productlist.php');
 
 </body>
 </html>
-
-?>
