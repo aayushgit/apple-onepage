@@ -56,7 +56,7 @@ session_start();
 		<p>When it comes to security, Apple is the global leader. Security is and has always been an unparallel attribute of an Apple phone.</p>
 		</div>
 
-		<img src="./assets/images/iphone.png" alt="Iphone in Hand" style="float: left;
+		<img src="./assets/images/img2.png" alt="Iphone in Hand" style="float: left;
     width: 422px;
     position: absolute;
     top: 830px;
@@ -77,7 +77,7 @@ include('productlist.php');
 	<h1>Join Us Today</h1>
 	<p>Join us today to get the best deals on all Apple Products.</p>
 	<div class="joinform">
-		<form action="./action.php" name="joinus" onSubmit="return validateForm();" method="post">
+		<form action="subscribe.php" name="joinus" onSubmit="return validateForm();" method="POST">
 			<input type="text" placeholder="Enter Your Name" name="name"> <br>
 			<input type="text" placeholder="Enter Your Email Address" name="email"> <br>
 			<button type="submit" class="joinbtn" >Join Now</button>

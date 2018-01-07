@@ -18,7 +18,7 @@ if(!$query){
 }
 if($result->num_rows>0)
 {
-	$_SESSION["name"]=$username;
+	$_SESSION["username"]=$username;
     $_SESSION["password"]=$password;
 	echo "<script type='text/javascript'>location.href = 'dashboard.php';</script>";
 	exit();

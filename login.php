@@ -6,7 +6,7 @@
 </head>
 <body>
 <div class="login">
-	<img src="assets/images/apple_logo.png" alt="Logo of Apple" width="60px">
+	<a href="home.php"><img src="assets/images/apple_logo.png" alt="Logo of Apple" width="60px"></a>
 	<h2>Good Morning!</h2>
 	<h4>This day will be great.</h4>
 	<form class="loginform" name="loginform" action="loginbe.php" method="POST">

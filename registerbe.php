@@ -18,11 +18,11 @@ $query = "INSERT INTO users(firstname, lastname, email, username, password) VALU
 $result=$conn->query($query);
 if(!$query){
 	die('Invalid Query'.mysql_error());
-	header('Location:register.html');
+	header('Location:register.php');
 }
 else
 {
-	header('Location:login.html');
+	header('Location:login.php');
 }
 $conn->close();
 ?>

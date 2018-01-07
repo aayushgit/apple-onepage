@@ -1,58 +1,15 @@
 body{
 	font-family: 'Helvetica';
 }
+
 #pricing h1{
 	text-align: center;
 
 }
 
-.search{
-	background: #292929;
-	margin: -10px;
-
-}
-
-.search img{
-	width: 25px;
-  padding: 10px 20px 0px 20px;
-      margin: 2px 2px -6px 2px;
-
-}
-
-.search input{
-	height: 30px;
-    margin: 0px 0px 10px 30px;
-    border-radius: 12px;
-    border: none;
-    width: 25%;
-    text-align: left;
-    font-size: 14px;
-    padding-left: 10px;
-    background-color: #595959;
-    color: #fff;
-}
-
-input:focus{
-	outline: none;
-}
-
 #pricing table{
 	width: 100%;
 	
-}
-
-th{
-	border-bottom: 1px solid;
-}
-
-tr:nth-child(even) {background-color: #f2f2f2;}
-#pricing table td{
-	font-weight: 100;
-	text-align: center;
-}
-
-#pricing table ul li{
-	text-align: left;
 }
 
 .buynow{
@@ -65,3 +22,9 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     width: 110px;
     text-align: center;
 }
+
+th{
+	border-bottom: 1px solid;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}

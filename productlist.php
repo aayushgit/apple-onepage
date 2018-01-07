@@ -8,6 +8,7 @@ $uname="root";
 $pass="";
 $dbname="apple";
 $conn=new mysqli($host,$uname,$pass,$dbname);
+$i=1;
 if($conn->connect_error)
 	{
 		die("Error in Connection");
@@ -33,7 +34,7 @@ if($result->num_rows>0){
 		echo"<tr>
 			<td>".$row['productid']."</td>
 			<td>".$row['productname']."</td>
-			<td><img src='./assets/images/iphonex.png' alt='' width='100px'></td>
+			<td><img src='./assets/images/img".$i++.".png' alt='' width='100px'></td>
 			<td>
 				<ul>
 					<li>".$row['spec1']."</li>

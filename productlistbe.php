@@ -1,9 +1,11 @@
 <html>
-
+<head>
+	<link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
 <body>
 	<div class="search">
 		<a href="home.php"><img src="assets/images/logo.png" alt="Apple Logo"></a>
-		<form action="searchlist.php" style="display: inline">
+		<form action="searchlist.php" style="display: inline" method="GET">
 			<input type="text" placeholder="Search" name="searchq">
 			
 		</form>
@@ -16,12 +18,14 @@
 echo"<head>
 	<title>All Products</title>
 	<link rel='stylesheet' href='assets/css/productlisting.css'>
+
 </head>";
 $host="localhost";
 $uname="root";
 $pass="";
 $dbname="apple";
 $conn=new mysqli($host,$uname,$pass,$dbname);
+$i=1;
 if($conn->connect_error)
 	{
 		die("Error in Connection");
@@ -48,7 +52,7 @@ if($result->num_rows>0){
 		echo"<tr>
 			<td>".$row['productid']."</td>
 			<td>".$row['productname']."</td>
-			<td><img src='./assets/images/iphonex.png' alt='' width='100px'></td>
+			<td><img src='./assets/images/img".$i++.".png' alt='' width='100px'></td>
 			<td>
 				<ul>
 					<li>".$row['spec1']."</li>
@@ -59,9 +63,9 @@ if($result->num_rows>0){
 			<td>$".$row['productprice']."</td>
 			<td>".$row['productstock']."</td>"; //TODO add images in DB make dynamic
 
-			echo"<td><a href='dashboard.html'><button class='buynow'>Edit</button></a>
-				<a href='deleteproduct.php'><button class='buynow' style='background-color: red'>Delete</button></a></td>
-		</tr>";
+			echo"<td><a href='updateproduct.php?pid=".$row['productid']."'><button class='buynow'>Edit</button></a>";
+				echo"<td><a href='deleteproduct.php?pid=".$row['productid']."'><button class='buynow' style='background:red;'>Delete</button></a>";
+		echo"</tr>";
 		}
 	}
 	echo"</table>";

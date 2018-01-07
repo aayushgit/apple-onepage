@@ -1,10 +1,11 @@
 <?php
-$productName=$_GET['productName'];
-$productSpec1=$_GET['spec1'];
-$productSpec2=$_GET['spec2'];
-$productSpec3=$_GET['spec3'];
-$productStock=$_GET['productStock'];
-$productPrice=$_GET['productPrice'];
+
+$productName=$_POST['productName'];
+$productSpec1=$_POST['spec1'];
+$productSpec2=$_POST['spec2'];
+$productSpec3=$_POST['spec3'];
+$productStock=$_POST['productStock'];
+$productPrice=$_POST['productPrice'];
 $host="localhost";
 $uname="root";
 $pass="";
@@ -22,6 +23,7 @@ if(!$addproductquery){
 }
 else{
 	echo "<script>alert('Product Added')</script>";
+	header('Location: productlist.php');
 	
 }
 $conn->close();

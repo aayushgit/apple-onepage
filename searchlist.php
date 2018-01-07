@@ -1,7 +1,6 @@
 <?php
-include('productlist.php');
 echo"<head>
-	<title>All Products</title>
+	<title>Search Products</title>
 	<link rel='stylesheet' href='assets/css/productlisting.css'>
 </head>";
 $searchq = $_GET['searchq'];
@@ -9,13 +8,14 @@ $host="localhost";
 $uname="root";
 $pass="";
 $dbname="apple";
+$i=1;
 $conn=new mysqli($host,$uname,$pass,$dbname);
-$searchq = mysql_real_escape_string($searchq);
 if($conn->connect_error)
 	{
 		die("Error in Connection");
 	}
-$query = "SELECT * FROM products WHERE ('productname' LIKE '%".$searchq."%')"; //% means search anything with the text
+$query = "SELECT * FROM products WHERE ucase(productname) LIKE ucase('%".$searchq."%')"; //% means search anything with the text
+echo($query);
 $result=$conn->query($query);
 if($result->num_rows>0){
 	echo"<div id='pricing'>
@@ -37,7 +37,7 @@ if($result->num_rows>0){
 		echo"<tr>
 			<td>".$row['productid']."</td>
 			<td>".$row['productname']."</td>
-			<td><img src='./assets/images/iphonex.png' alt='' width='100px'></td>
+			<td><img src='./assets/images/img".$i++.".png' alt='' width='100px'></td>
 			<td>
 				<ul>
 					<li>".$row['spec1']."</li>

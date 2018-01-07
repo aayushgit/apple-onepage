@@ -1,7 +1,9 @@
 <?php
 session_start();
-if(!(isset($_SESSION["username"])))
-	echo "<script language=text/javascript>location.href='login.php';</script>";
+if(empty($_SESSION['username']))
+{
+	header('Location:home.php');
+}
 ?>
 
 
@@ -14,8 +16,8 @@ if(!(isset($_SESSION["username"])))
 <body>
 	<div class="search">
 		<a href="index.php"><img src="assets/images/logo.png" alt="Apple Logo"></a>
-		<form action="searchlist.php" style="display: inline">
-			<input type="search" placeholder="Search">
+		<form action="searchlist.php" style="display: inline" method="GET">
+			<input type="text" name="searchq" placeholder="Search">
 		</form>
 		<a href="updateuser.php" style="float:right;margin: 16px 30px 12px 12px; text-decoration: none;color: green;">Change Password</a>
 		<a href="logout.php" style="float:right;margin: 16px 30px 12px 12px; text-decoration: none;color: red;">Log Out</a>
@@ -26,7 +28,7 @@ if(!(isset($_SESSION["username"])))
 	<h3>All the details of the product please!</h3>
 
 	<div class="main">
-		<form name="add" action="addproduct.php" method="GET">
+		<form name="add" action="addproduct.php" method="POST" enctype="multipart/form-data">
 			<input type="text" placeholder="Product Id" name="productID">
 			<input type="text" placeholder="Name of the Product" name="productName">
 			<!-- <select type="text" placeholder="Storage Size" name="productStorage">
@@ -42,6 +44,7 @@ if(!(isset($_SESSION["username"])))
 			<input type="text" placeholder="Specification 3" name="spec3">
 			<input type="number" placeholder="Stock of Product" name="productStock">
 			<input type="text" placeholder="Price of Product" name="productPrice">
+			<input type="file" placeholder="Price of Product" name="productImage" id="productImage">
 			<button type="submit" class="submit" value="Add Now">Add Now</button>
 
 
