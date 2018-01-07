@@ -45,27 +45,28 @@ if($result->num_rows>0){
 			<td>$".$row['productprice']."</td>
 			<td>".$row['productstock']."</td>"; //TODO add images in DB make dynamic
 
-			echo"<td><button class='buynow' id='myBtn'>Buy Now</button>
-				
-		</tr>";
-	}
-	echo"</table>";
-	echo"
+			echo"<td><button class='buynow' id='myBtn'>Buy Now</button>";
+				echo"
 			<div id='myModal' class='modal'>
 			<div class ='modal-content'>
 				<span class ='close'>&times;</span>
 				<h1 style='color:white; margin-bottom:0px'>Thank You For Shopping with US </h1>
 				<h4 style='color:white; margin-top:4px;text-align:center;'>The product will be delivered to your Address.</h4>
-				<form action='sales.php' class='popupform' method='POST' style='float:left;width:100%;    padding: 0px 0px 0px 135px;'>
+				<form action='sellproduct.php' class='popupform' method='POST' style='float:left;width:100%;'>
 				    <input type='text' name='customername' placeholder='Please Enter Your Name'>
 				    <input type='text' name='customeremail' placeholder='Please Enter Your Email'>
 				    <input type='text' name='customercontact' placeholder='Please Enter Your Contact Number'>
-				    <input type='number' name='numberofproduct' placeholder='Please Enter Number of Items'>
-				    <span class='total'>The Total Price is: </span>
+				    <input type='text' name='nameofproduct' placeholder='' value='".$row['productname']."'><br> 
+				    <span class='total'><h3 style='color:#fff;text-align:center'>The Total Price is:".($row['productprice'])."</h3></span>
+				    <a href='sellproduct.php?pid=".$row['productid']."'><button class='buynow'>Order</button></a>
 				    
 				</form>
 			</div>
 			</div>";  //Modal content and model div
+		echo"</tr>";
+	}
+	echo"</table>";
+	
 		}
 ?>
 	<script>

@@ -23,7 +23,7 @@ if(!$addproductquery){
 }
 else{
 	echo "<script>alert('Product Added')</script>";
-	header('Location: productlist.php');
+	header('Location: productlistbe.php');
 	
 }
 $conn->close();
